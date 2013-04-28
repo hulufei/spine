@@ -3,8 +3,8 @@ module.exports = ->
   @initConfig
     # Lint
     coffeelint:
-        source: 'src/**/*.coffee'
-        grunt: 'Gruntfile.coffee'
+      source: 'src/**/*.coffee'
+      grunt: 'Gruntfile.coffee'
 
     # Coffee Compiler
     coffee:
@@ -28,7 +28,7 @@ module.exports = ->
   @loadNpmTasks 'grunt-contrib-watch'
   @loadNpmTasks 'grunt-contrib-coffee'
 
-  # task
+  # tasks
   @registerTask 'lint', ['coffeelint']
   @registerTask 'build', ['coffee']
   @registerTask 'default', ['lint:source', 'build']
