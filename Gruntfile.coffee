@@ -28,7 +28,7 @@ module.exports = ->
   @loadNpmTasks 'grunt-contrib-watch'
   @loadNpmTasks 'grunt-contrib-coffee'
 
-  # Default task
+  # task
   @registerTask 'lint', ['coffeelint']
   @registerTask 'build', ['coffee']
   @registerTask 'default', ['lint:source', 'build']
